@@ -23,5 +23,9 @@ export const AppConfig = {
     },
     CORS: {
         origin: process.env.CORS_ORIGIN ?? ''
+    },
+    FIREBASE_ADMIN_CONFIG: {
+        iss: process.env.FIREBASE_ISS ?? '',
+        aud: process.env.FIREBASE_AUD ?? ''
     }
 };
