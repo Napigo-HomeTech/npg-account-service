@@ -43,7 +43,7 @@ export const createCSRFToken = (payload: any) => {
         keyid: AppConfig.JWT.kid,
         algorithm: AppConfig.JWT.alg as jwt.Algorithm,
         audience: AppConfig.JWT.audience,
-        expiresIn: 60000,
+        expiresIn: 60 * 60, // 1 hour
         subject: claims.user_id
     });
 
